@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     client = boto3.client('codepipeline')
 
     response = client.start_pipeline_execution(
-        name='AutoDeployBuild'
+        name='autodeply-lambda'
     )
 
     return {
